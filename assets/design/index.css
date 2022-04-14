@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* text */
+    --body-font: 'Poppins', sans-serif;
+    --text-color: #37383C;
+    --shadow-text: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+    /* colors */
+    --bnt-booking-hover: #F56300;
+    --header-background: #0A2680;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--body-font);
+    color: var(--text-color);
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #0c0142;
+}
+
+.container-header{
+    color: #FFFFFF;
+    background-color: var(--header-background);
+    border-radius: 0 0 20px 20px;
+}
+
+.container-header header{
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.navigation {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navigation a i {
+    margin-right: 10px;
+}
+
+.btn-booking {
+    padding: 8px 8px;
+    width: 200px;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-booking:hover{
+    border: 1px solid var(--bnt-booking-hover);
+    background-color: var(--bnt-booking-hover);
+}
+
+.box-titulos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-titulos img {
+    width: 400px;
+    height: 400px;
+    margin-right: 50px;
+    object-fit: cover;
+}
+
+.text-box {
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 3em;
+}
+
+.container {
+    padding: 20px 80px;
+    width: 100%;
+    height: 100vh;
+}
+
+.title-sections {
+    font-size: 2em;
+}
+
+/* quartos */
+
+.container-quartos {
+    margin-top: 50px;
+}
+
+.quartos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card-quarto {
+    width: 320px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(3, 15, 46, .1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+}
+
+.card-quarto:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(3, 15, 46, .2);
+}
+
+.img-size {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin-bottom: 35px;
+    background-size: cover ;
+    background-position-x: 60%;
+}
+
+.solteiro {
+    background-image: url(/assets/imagens/quarto-solteiro1.jpg);
+}
+.casal {
+    background-image: url(/assets/imagens/quarto-casal1.jpg);
+}
+.familia {
+    background-image: url(/assets/imagens/quarto-familia1.jpg);
+    background-position-x: 100%;
+}
+
+.card-quarto a {
+    text-decoration: none;
+    color: #37383C;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.card-quarto a:hover {
+    color: #F56300;
+}
+
+/* rota */
+
+.container-rota {
+    padding-top: 100px;
+    background-color: #FAFAFA;
+}
+
+.rota {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rota img {
+    width: 400px;
+}
+
+.rota iframe {
+    width: 680px;
+    height: 320px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(3, 15, 46, .5);
+}
+
+
+/* sobre a pousada */
+
+.container-sobre {
+    padding-top: 100px;
+}
+
+.info-pousada {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sobre {
+    width: 250px;
+    color: #000000;
+    background-color: rgba(255, 255, 255, .8);
+    margin-bottom: 10px;
+}
+
+.sobre h3 {
+    padding-top: 10px;
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+.sobre p {
+    font-size: .8em;
+    text-align: justify;
+}
+
+.sobre img {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+}
+
+/* form de inscricao */
+
+form {
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FAFAFA;
+}
+
+form p {
+    margin: 0;
+    padding-bottom: 20px;
+    color: #37383c;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.container-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cadastro-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.cadastro-email  input {
+    width: 600px;
+    height: 50px;
+    margin-right: 15px;
+    color: #0c0142;
+    padding: 5px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 20px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.cadastro-email button {
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 15pt;
+    font-weight: 500;
+    background: #0A2680;
+    outline: none;
+}
+
+.cadastro-email button:hover {
+    cursor: pointer;
+    background: #0e33ac;
+}
+
+.cadastro-email  input::placeholder{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    color: #37383c;
+    font-size: 10pt;
+    align-items: center;
+}
+
+/* footer */
+
+footer {
+    margin: 0;
+	bottom: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0A2680;
+    box-sizing: border-box;
+}
+
+.info-contato {
+    margin: 0;
+    padding: 30px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+
+.info-contato a {
+    margin: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 10pt;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.info-contato .link-contato {
+    margin: 0;
+    font-size: 10pt;
+    text-decoration: none;
+    color: #F56300;
+    font-weight: 500;
+}
+
+.info-contato p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 10pt;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.icon-down {
+    color: #FFFFFF;
+    font-size: 12pt;
+    padding-right: 10px;
+}
+
+.text-footer {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-footer h1 {
+    font-size: 30pt;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+.text-footer p {
+    margin: 0;
+    font-size: 10pt;
+}
