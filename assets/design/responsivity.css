@@ -1,169 +1,227 @@
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
 
-    ::-webkit-scrollbar {
-        display: none;
-    } */
-
-/* =============== HEADER =============== */
-    /* .title-header > h1 {
-       font-size: 1.2em;
-    }
-
-    .links-header {
+    body::-webkit-scrollbar {
         display: none;
     }
 
-    .container-title {
-        height: 350px;
+    .container-header {
+        height: 200px;
     }
 
-    .imagem-title {
-        width: 100%;
-        height: 350px;
-        position: absolute;
-        display: flex;
-        justify-content: center;
+    .container-header header {
+        padding: 10px 15px;
     }
 
-    .imagem-title img{
-        width: 350px;
-        height: 350px;
-        opacity: .7;
+    .container-header video {
+        height: 200.5px;
     }
 
-    .title {
-        width: 100%;
-        height: 350px;
-        position: absolute;
-        display: flex;
-        justify-content: center;
+    #btn-mobile {
+        display: block;
     }
 
-    .title h1 {
-        font-size: 2.5em;
+    .navigation a {
+        display: none;
     }
 
-    .title p {
-        bottom: 10%;
-    } */
+    .logo {
+        font-size: 1em;
+        padding-left: 15px;
+    }
+
+    .text-box {
+        top: 30%;
+    }
+
+    .text-box h1 {
+        font-size: 1.5em;
+    }
     
-/* =============== CARDS DOS QUARTOS =============== */
+    .text-box p {
+        font-size: .5em;
 
-    /* .container-quartos {
-        flex-direction: column;
     }
 
-    .container-quartos > h2 {
-        margin: 0;
-        padding: 2.5em 3em .2em;
-        font-size: 10pt;
+    .container {
+        height: 80vh;
+        padding: 0 25px;
     }
 
-    .container-quartos > p {
-        margin: 0;
-        padding: .5em 3.8em 2em;
-        text-align: justify;
-        color: #37383c;
-        font-size: 8pt;
-        font-weight: 500;
+    .container p {
+        font-size: .7em;
+        padding-bottom: 0;
     }
+
+    .title-sections {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+
+    /* quartos */
 
     .quartos {
         flex-direction: column;
-        justify-content: space-evenly;
+        margin-top: 20px;
+        gap: 1.5em;
     }
 
-    .quarto-solteiro, .quarto-casal, .quarto-familia {
-        height: 180px;
-        width: 280px;
+    .img-size {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        margin-bottom: 0;
     }
 
-    .quarto-solteiro > p, .quarto-casal > p, .quarto-familia > p {
-        font-size: 15pt;
+    .card-quarto {
+        width: 100%;
+        height: 85px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(3, 15, 46, .2);
+    
+        flex-direction: row;
+        justify-content: space-around;
+       
     }
 
-    .quarto-solteiro, .quarto-casal {
-        margin-bottom: 20px;
+    .card-quarto a {
+        font-size: .8em;
     }
 
-/* =============== ROTA =============== */
+    /* rota */
 
-    /* .container-rota > h2 {
-        margin: 0;
-        padding: 2.5em 3em .2em;
-        font-size: 10pt;
-    }
-
-    .container-rota > p {
-        margin: 0;
-        padding: .5em 3.8em 2em;
-        font-size: 8pt;
+    .container-rota {
+        height: 70vh;
     }
 
     .rota {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding-top: 0px;
     }
 
-    .rota-imagem {
-        width: 100%;
-        display: none;
+    .rota img {
+        width: 100px;
+        margin: 20px 0;
     }
 
-    .rota-imagem > img {
-        margin: 0;
-        width: 150px;
+    .rota iframe {
+        width: 260px;
+        height: 150px;
     }
 
-    .rota.maps {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
+    /* sobre a pousada */
 
-    .rota-maps > iframe {
-        margin: 0;
-        border: 0;
-        box-shadow: 0 0 5px rgba(3, 15, 46, .5);
-        border-radius: 10px;
-        height: 160px;
-        width: 360px;
-    } */
-
-/* =============== SOBRE A POUSADA =============== */
-
-    /* .container-sobre > h2 {
-        margin: 0;
-        padding: 0 2em .2em;
-        text-align: justify;
-        color: #37383c;
-        font-size: 20pt;
-        font-weight: 800; 
-    }
-
-    .container-sobre > p {
-        margin: 0;
-        padding: .5em 3.3em 0;
-        text-align: justify;
-        color: #37383c;
-        font-size: 12pt;
-        font-weight: 500;
+    .container-sobre {
+        height: 80vh;
     }
 
     .info-pousada {
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        gap: 2em;
     }
 
-    .sobre-pousada, .sobre-quartos, .sobre-alimentacao {
-        padding: 20px 0;
-        border-bottom: 1px solid rgba(55, 56, 60, .3);
+    .info-pousada::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        opacity: 1;
+    }
+    
+    .info-pousada::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: rgba(255, 115, 0, 0.5);
+    } 
+
+    .sobre {
+        /* border: 1px solid black; */
+        width: 310px;
+        margin-bottom: 20px;
+        padding: 10px 0;
     }
 
-    .sobre-recepcao {
-        padding: 20px 0;
-        border-top: 1px solid rgba(55, 56, 60, .3);
+    .sobre img {
+        width: 309px;
+        height: 200px;
     }
-} */
+
+    /* formulario */
+
+    form {
+        height: 60vh;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    form p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    form img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .container-form {
+        width: 85%;
+    }
+
+    .cadastro-email  input {
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .cadastro-email  input::placeholder {
+        font-size: 12px;
+    }
+
+    .cadastro-email button {
+        width: 85px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .checkbox {
+        font-size: 9px;
+    }
+
+    /* footer */
+
+    footer {
+        flex-direction: column-reverse;
+        height: 120px;
+    }
+
+    .wave {
+        height: 50px;
+    }
+
+    .icon-down {
+        font-size: 10px;
+        padding-right: 5px;
+    }
+
+    .info-contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        gap: .5em
+    }
+    
+    .info-contato p, .info-contato a, .info-contato .link-contato {
+        font-size: 7px;
+    }
+
+    .text-footer h1 {
+        font-size: 1.5em;
+    }
+
+    .text-footer p {
+        font-size: .5em;
+    }
+
+}
