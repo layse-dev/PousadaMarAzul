@@ -20,6 +20,7 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth !important;
+    height: 100%;
 }
 
 body {
@@ -300,11 +301,11 @@ body::-webkit-scrollbar-thumb {
 /* form de inscricao */
 
 form {
-    height: 400px;
+    height: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     background: #FAFAFA;
 }
@@ -320,6 +321,7 @@ form p {
     color: #37383c;
     font-size: 2em;
     font-weight: 600;
+    margin-bottom: 1em;
 }
 
 .container-form {
@@ -382,11 +384,23 @@ form p {
     justify-content: center;
 }
 
+/* ***** */
+
+.wave {
+    position: static;
+    margin-top: 50px;
+    width: 100%;
+    height: 120px;
+    background-image: url(/assets/imagens/wave.svg);
+    background-size: cover;
+    background-position-y: 55%;
+}
+
 /* footer */
 
 footer {
     margin: 0;
-	bottom: 0;
+    bottom: 0;
     width: 100%;
     height: 150px;
     display: flex;
@@ -396,17 +410,6 @@ footer {
     box-sizing: border-box;
     overflow: hidden;
 }
-
-.wave {
-    position: static;
-    width: 100%;
-    height: 120px;
-    background-image: url(/assets/imagens/wave.svg);
-    background-size: cover;
-    background-position-y: 55%;
-}
-
-
 
 .info-contato {
     margin: 0;
@@ -471,6 +474,7 @@ footer {
 .text-footer p {
     margin: 0;
     font-size: 10pt;
+    color: #FFFFFF;
 }
 
 /* botao back-to-top */
